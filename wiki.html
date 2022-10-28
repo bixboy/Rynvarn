@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a herf="https://www.google.com/"></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynvarn</title>
+    <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">Rynvarn</a>
+        <div class="nav-links">
+            <ul class="links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="wiki.html">Wiki</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#" class="boutique">Boutique</a></li>
+                <li class="login-boutton"><a href="#" class="login-texte"> | Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <ul class="navbar-tel">
+            <li><img src="ressources\btn.png" alt="menu" class="menu"></li>
+            <li class="login-icon"><img src="ressources\clipart153139.png" alt="Connexion" class="login-icon-taille"></a></li>
+        </ul>
+    </div>
+
+    <div class="ombre"></div>
+
+    <div class="wiki">
+        <ul class="wiki-txt">
+            <li>111</li>
+            <li>222</li>
+        </ul>
+    </div>
+
+    <header></header>
+
+    <div class="center1">
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Mot de passe perdut ?</div>
+                <input type="submit" value="login">
+                <div class="singup-link">
+                    Pas de compte? <a href="#">S'enregistrer</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menu.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })  
+
+        const loginicon = document.querySelector(".login-icon")
+        const center = document.querySelector(".center")
+ 
+        loginicon.addEventListener('click',()=>{
+        center.classList.toggle('connexion')
+        })
+        
+        const logintexte = document.querySelector(".login-texte")
+        const center1 = document.querySelector(".center1")
+ 
+        logintexte.addEventListener('click',()=>{
+        center.classList.toggle('connexion')
+        }) 
+    </script>
+
+</html>
