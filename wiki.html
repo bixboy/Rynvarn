@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a herf="https://www.google.com/"></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rynvarn</title>
+    <link rel="stylesheet" href="css\wiki-components\wiki.css">
+    <link rel="stylesheet" href="css\wiki-components\wiki-navbar.css">
+    <link rel="stylesheet" href="css\wiki-components\wiki-liste.css">
+    <link rel="stylesheet" href="css\wiki-components\wiki-content.css">
+    <link rel="stylesheet" href="css\wiki-components\wiki-footer.css">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <a href="index.html" class="logo">Rynvarn</a>
+        <div class="nav-links">
+            <ul class="links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="wiki.html">Wiki</a></li>
+                <li><a href="map.html">Maps</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#" class="boutique">Boutique</a></li>
+                <li class="login-boutton"><a href="#" class="login-texte"> | Connexion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <ul class="navbar-tel">
+            <li class="menu-icon"><img src="ressources\btn.png" alt="menu" class="menu"></li>
+            <li class="logo-icon"><a href="index.html" class="logo-tel">Rynvarn</a></li>
+            <li class="login-icon"><img src="ressources\clipart153139.png" alt="Connexion" class="login-icon-taille"></a></li>
+        </ul>
+    </div>
+
+    <div class="ombre"></div>
+
+    <div class="wiki-1">
+
+        <div class="txt-top">
+            <span><h2 class="titre-wiki">Wiki de Rynvarn</h2></span>
+            <span><a class="desc-wiki">Il y aura toujours une réponse a vos questions.</a></span>
+        </div>
+
+        <div class="wiki-2">
+            <div class="wiki-content"></div>
+
+            <div class="wiki-liste">
+                <h3 class="wiki-titre-liste">WIKI</h3>
+                <ul class="wiki-txt-regles">
+                    <li class="accueil"><a href="#" class="accueil-1">🌍Accueil</a></li>
+                    <li class="codex"><a href="#" class="codex-1">⚖️Codex</a></li>
+                    <li class="luncher"><a href="#" class="luncher-1">🐧Instalation luncher</a></li>
+                </ul>
+
+                <h3 class="wiki-titre-gameplay">GamePlay</h3>
+                <ul class="wiki-gamplay">
+
+                    <li class="armes">
+                        <a href="#" class="armes-1" role="button">
+                            <img src="ressources\bouton-fleche-droite-du-clavier.png" alt="fleche" class="img-fleche-armes"><span>⚔️</span><span>Armes</span>
+                        </a>
+
+                        <ul class="armes-liste">
+                            <li class="sword"><a href="#" class="sword-1"><span>⚔️</span><span>Sword</span></a></li>
+                            <li class="hammer"><a href="#" class="hammer-1">🔨Hammer</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="agriculture">
+                        <a href="#" class="agriculture-1" role="button">
+                            <img src="ressources\bouton-fleche-droite-du-clavier.png" alt="fleche" class="img-fleche-agriculture"><span>🌽</span><span>Agriculture</span>
+                        </a>
+
+                        <ul class="agriculture-liste">
+                            <li></li>
+                            <li></li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <header></header>
+
+    <div class="center1">
+        <div class="center">
+            <h1>Login</h1>
+            <form method="post">
+
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+
+                <div class="txt-field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Mot de passe perdut ?</div>
+                <input type="submit" value="login">
+                <div class="singup-link">
+                    Pas de compte? <a href="#">S'enregistrer</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="fleche-footer"> <img src="ressources\bouton-fleche-droite-du-clavier.png" alt="fotter" class="footer-button"> </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <ul class="rynvarn-footer">
+                <li class="rynvarn-footer-titre"> Rynvarn </li>
+                <li class="rynvarn-footer-item"><a href="#" class="txt-footer"> Nous contacter </a></li>
+                <li class="rynvarn-footer-item"><a href="#" class="txt-footer"> L'équipe </a></li>
+                <li class="rynvarn-footer-item"><a href="#" class="txt-footer"> Maps </a></li>
+            </ul>
+
+            <ul class="resaux-footer">
+                <li class="resaux-footer-titre">Réseaux sociaux</li>
+                <li class="resaux-footer-item"><a href="#" class="txt-footer">Instagram</a></li>
+                <li class="resaux-footer-item"><a href="#" class="txt-footer">Twitter</a></li>
+                <li class="resaux-footer-item"><a href="#" class="txt-footer">Tiktok</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menu.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })  
+
+        const loginicon = document.querySelector(".login-icon")
+        const center = document.querySelector(".center")
+ 
+        loginicon.addEventListener('click',()=>{
+        center.classList.toggle('connexion')
+        })
+        
+        const logintexte = document.querySelector(".login-texte")
+        const center1 = document.querySelector(".center1")
+ 
+        logintexte.addEventListener('click',()=>{
+        center.classList.toggle('connexion')
+        })
+
+        const footer = document.querySelector(".footer")
+        const footerbutton = document.querySelector(".footer-button")
+        const flechefooter = document.querySelector(".fleche-footer")
+ 
+        footerbutton.addEventListener('click',()=>{
+        footerbutton.classList.toggle('rotate')
+        flechefooter.classList.toggle('rotate')
+        footer.classList.toggle('up')
+        }) 
+
+        const luncher = document.querySelector(".luncher")
+        const luncher1 = document.querySelector(".luncher-1")
+ 
+        luncher.addEventListener('click',()=>{
+        luncher1.classList.toggle('slide')
+        if(codex1.classList.contains('slide'))
+            codex1.classList.remove('slide')
+            codex.classList.remove('slide')
+        if(accueil1.classList.contains('slide'))
+            accueil1.classList.remove('slide')
+            accueil.classList.remove('slide')
+        if(hammer1.classList.contains('slide'))
+            hammer1.classList.remove('slide')
+            hammer.classList.remove('slide')
+        if(sword1.classList.contains('slide'))
+            sword1.classList.remove('slide')
+            sword.classList.remove('slide')
+        })
+
+        const codex = document.querySelector(".codex")
+        const codex1 = document.querySelector(".codex-1")
+ 
+        codex.addEventListener('click',()=>{
+        codex1.classList.toggle('slide')
+        codex.classList.toggle('slide')
+        if(luncher1.classList.contains('slide'))
+            luncher1.classList.remove('slide')
+            luncher.classList.remove('slide')
+        if(accueil1.classList.contains('slide'))
+            accueil1.classList.remove('slide')
+            accueil.classList.remove('slide')
+        if(hammer1.classList.contains('slide'))
+            hammer1.classList.remove('slide')
+            hammer.classList.remove('slide')
+        if(sword1.classList.contains('slide'))
+            sword1.classList.remove('slide')
+            sword.classList.remove('slide')
+        })
+
+        const accueil = document.querySelector(".accueil")
+        const accueil1 = document.querySelector(".accueil-1")
+ 
+        accueil.addEventListener('click',()=>{
+        accueil1.classList.toggle('slide')
+        accueil.classList.toggle('slide')
+        if(luncher1.classList.contains('slide'))
+            luncher1.classList.remove('slide')
+            luncher.classList.remove('slide')
+        if(codex1.classList.contains('slide'))
+            codex1.classList.remove('slide')
+            codex.classList.remove('slide')
+        if(hammer1.classList.contains('slide'))
+            hammer1.classList.remove('slide')
+            hammer.classList.remove('slide')
+        if(sword1.classList.contains('slide'))
+            sword1.classList.remove('slide')
+            sword.classList.remove('slide')
+        });
+
+        const armes1 = document.querySelector(".armes-1")
+        const armes = document.querySelector(".armes")
+        const armesliste = document.querySelector(".armes-liste")
+        const imgflechearmes = document.querySelector(".img-fleche-armes")
+ 
+        armes1.addEventListener('click',()=>{
+        armes.classList.toggle('drop')
+        armesliste.classList.toggle('drop')
+        imgflechearmes.classList.toggle('rotate')
+        })
+
+        const agriculture1 = document.querySelector(".agriculture-1")
+        const agriculture = document.querySelector(".agriculture")
+        const agricultureliste = document.querySelector(".agriculture-liste")
+        const imgflecheagriculture = document.querySelector(".img-fleche-agriculture")
+ 
+        agriculture1.addEventListener('click',()=>{
+        agriculture.classList.toggle('drop')
+        agricultureliste.classList.toggle('drop')
+        imgflecheagriculture.classList.toggle('rotate')
+        })
+
+        const hammer = document.querySelector(".hammer")
+        const hammer1 = document.querySelector(".hammer-1")
+ 
+        hammer.addEventListener('click',()=>{
+        hammer1.classList.toggle('slide')
+        hammer.classList.toggle('slide')
+        if(luncher1.classList.contains('slide'))
+            luncher1.classList.remove('slide')
+            luncher.classList.remove('slide')
+        if(codex1.classList.contains('slide'))
+            codex1.classList.remove('slide')
+            codex.classList.remove('slide')
+        if(accueil1.classList.contains('slide'))
+            accueil1.classList.remove('slide')
+            accueil.classList.remove('slide')
+        if(sword1.classList.contains('slide'))
+            sword1.classList.remove('slide')
+            sword.classList.remove('slide')
+        })
+
+        const sword = document.querySelector(".sword")
+        const sword1 = document.querySelector(".sword-1")
+ 
+        sword.addEventListener('click',()=>{
+        sword1.classList.toggle('slide')
+        sword.classList.toggle('slide')
+        if(luncher1.classList.contains('slide'))
+            luncher1.classList.remove('slide')
+            luncher.classList.remove('slide')
+        if(codex1.classList.contains('slide'))
+            codex1.classList.remove('slide')
+            codex.classList.remove('slide')
+        if(accueil1.classList.contains('slide'))
+            accueil1.classList.remove('slide')
+            accueil.classList.remove('slide')
+        if(hammer1.classList.contains('slide'))
+            hammer1.classList.remove('slide')
+            hammer.classList.remove('slide')
+        });
+
+        H = window.getComputedStyle(accueil1.slide).getPropertyValue('height') ;
+        H = Math.round(H.substring(0, H.length-2));
+        marge = -H + 16 + 'px' ;
+
+        H = window.getComputedStyle(luncher1.slide).getPropertyValue('height') ;
+        H = Math.round(H.substring(0, H.length-2));
+        marge = -H + 16 + 'px' ;
+
+        H = window.getComputedStyle(codex1.slide).getPropertyValue('height') ;
+        H = Math.round(H.substring(0, H.length-2));
+        marge = -H + 16 + 'px' ;
+
+        H = window.getComputedStyle(sword1.slide).getPropertyValue('height') ;
+        H = Math.round(H.substring(0, H.length-2));
+        marge = -H + 16 + 'px' ;
+
+        H = window.getComputedStyle(hammer1.slide).getPropertyValue('height') ;
+        H = Math.round(H.substring(0, H.length-2));
+        marge = -H + 16 + 'px' ;
+    </script>
+
+</html>
