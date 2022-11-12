@@ -32,7 +32,8 @@ body {
 @media screen and (max-width: 900px) {
 
     header.header {
-        height: 115vh;
+         background-size: unset;
+         height: 111vh;
     }
 
     div.content-center {
