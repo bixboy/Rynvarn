@@ -1,0 +1,21 @@
+.wiki-content{
+    background-color: #181818;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 390px;
+    box-sizing: border-box;
+    width: 48%;
+    height: 791px;
+    border-radius: 2%;
+   }
+
+   @media screen and (max-width: 900px) {
+
+    div.wiki-content{
+        z-index: 1;
+        left: 100px;
+        position: unset;
+       }
+       
+   }
