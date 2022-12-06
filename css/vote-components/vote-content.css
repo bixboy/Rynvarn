@@ -1,0 +1,134 @@
+.vote {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 253px;
+    left: 0;
+    right: 0;
+    height: auto;
+    min-height: calc(100vh - 7rem);
+   }
+
+.vote-content{
+    left: 0;
+    right: 0;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .section-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .titre-vote {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+    line-height: 2.5rem;
+   }
+
+   .desc-titre-vote {
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+   }
+
+   .vote-button {
+    left: 0;
+    right: 0;
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+   }
+
+   .button {
+    height: 541px;
+    width: 424px;
+    margin-right: 115px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+   .button-body {
+    padding: 1.25rem 1.25rem 2rem;
+    background: #111111;
+    border-radius: 6px;
+    height: 67px;
+    width: 384px;;
+   }
+
+   .button-login-vote {
+    color: brown;
+    font-size: 18px;
+   }
+
+   .button-login-vote:hover {
+    color: rgb(226, 34, 34);
+   }
+
+   .txt-button-vote {
+    font-size: 17px;
+    font-family: cursive;
+    color: antiquewhite;
+   }
+
+   .titre-button-vote {
+    font-size: 29px;
+    font-family: inherit;
+    color: azure;
+   }
+
+   .classement {
+    height: 541px;
+    width: 456px;
+    margin-left: 115px;
+    background: #111;
+    border-radius: 6px;
+   }
+
+   .recompenses {
+    display: flex;
+    flex-direction: column;
+    background-color: lightslategrey;
+    border-radius: 6px;
+    margin-top: 45px;
+    align-items: center;
+    height: 373px;
+    width: 380px;
+   }
+
+   .titre-recompenses {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: rgb(255 255 255 / 73%);
+    font-size: 23px;
+   }
+
+   .desc-recompenses {
+
+   }
+
+   .txt-desc-recompenses {
+
+   }
+
+   .liste-recompenses {
+    
+   }
+
+   @media screen and (max-width: 900px) {
+
+    div.vote-content{
+        left: 100px;
+        display: none;
+       }
+       
+   }
